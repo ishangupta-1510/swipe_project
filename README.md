@@ -5,11 +5,11 @@ Installation and Setup Instructions
 3.	Install the dependencies: npm install
 4.	Start the application: npm start
 List of Libraries and Tools Used
-•	React
-•	jsPDF
-•	useState
-•	useEfferct
-•	useRef
+1.	React
+2.	jsPDF
+3.	useState
+4.	useEfferct
+5.	useRef
 Additional Notes and Assumptions
 •	This project is an invoice generator that allows users to input sender and recipient information, invoice details, line items and signature (optional).
 •	The generated invoice is downloaded in PDF format.
