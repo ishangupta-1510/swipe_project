@@ -1,38 +1,131 @@
-.App {
+.invoice-form {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for headings */
+h2 {
+  font-size: 2em;
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Styling for input fields */
+.date {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.date input[type="date"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+input[type="text"],
+input[type="number"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="date"] {
+  margin-bottom: 20px;
+}
+
+/* Styling for line items */
+.line-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr auto;
+  grid-column-gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.signature {
+  width: 400px;
+  height: 200px;
+  border: 1px solid black;
+}
+.add-line-item,.remove-line-item {
+  background-color: #4CAF50; /* Set the background color */
+  border: none; /* Remove borders */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Display as inline block */
+  font-size: 16px; /* Set font size */
+  margin-top: -20px; /* Add margin on top */
+  margin-left: 20px;
+  cursor: pointer; /* Change cursor on hover */
+  border-radius: 5px; /* Add rounded corners */
+}
+.add-line-item,
+.remove-line-item {
+  border: none;
+  background-color: #eee;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-line-item:hover,
+.remove-line-item:hover {
+  background-color: #ccc;
+}
+
+/* Styling for totals */
+.totals {
+  display: flex;
+  margin-top: 20px;
+}
+
+.subtotal,
+.tax,
+.total {
+  margin-left: 20px;
+}
+
+/* Styling for signature */
+.signature {
+  margin-top: 20px;
+}
+
+.signature input[type="file"] {
+  margin-bottom: 10px;
+}
+
+.signature img {
+  margin-top: 10px;
+}
+
+/* Styling for submit button */
+.submit-button {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.submit-button button {
+  border: none;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button button:hover {
+  background-color: #0c7cd5;
 }
