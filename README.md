@@ -1,4 +1,4 @@
-# swipe_projectSWIPE INVOICE GENERATOR
+SWIPE INVOICE GENERATOR
 Installation and Setup Instructions
 1.	Clone the repository: git clone https://github.com/ishangupta-1510/swipe_project
 2.	Navigate to the project directory: cd swipe_project
